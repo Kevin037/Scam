@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">S-cam</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
+    <string name="title_activity_home_mhs">home_mhs</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home_admin">home_admin</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_mhs">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pinjam_ruang"
+        android:scaleType="fitXY"
+        android:id="@+id/pinjam_ruang"
+        />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pinjam_barang"
+        android:scaleType="fitXY"
+        android:id="@+id/pinjam_barang"
+        android:layout_toRightOf="@id/pinjam_ruang"
+        android:onClick="pinjam_barang"
+        />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/abs_lab"
+        android:scaleType="fitXY"
+        android:layout_below="@id/pinjam_ruang"
+        android:id="@+id/pres_lab"
+        />
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/info_gedung"
+        android:scaleType="fitXY"
+        android:id="@+id/info_gedung"
+        android:layout_toRightOf="@id/pres_lab"
+        android:layout_below="@id/pinjam_barang"
+        />
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

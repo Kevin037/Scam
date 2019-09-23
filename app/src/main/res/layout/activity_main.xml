@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg1"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btnadmin"
+        android:text="Masuk Sebagai?"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
+        android:textSize="30dp"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnadmin"
+        android:onClick="admin"
+        />
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Mahasiswa"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btnadmin"
+        android:layout_marginTop="30sp"
+        android:id="@+id/btnmhs"
+        android:onClick="mahasiswa"
+        />
+</RelativeLayout>
